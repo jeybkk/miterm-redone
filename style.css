@@ -1,0 +1,103 @@
+/* I wanted, during the midterm, to implement as much CSS as possible */
+body {
+    border: solid 1px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* every css classes are made easily readable for code review and implementation by using "is-attribute" and "has-attribute" */
+.is-italic {
+    font-style: italic;
+}
+
+.is-bold {
+    font-weight: bold;
+}
+
+.is-underline {
+    text-decoration: underline;
+}
+  
+.is-super {
+    vertical-align: super;
+    font-size: smaller;
+    
+}
+
+.is-sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+ul {
+    list-style: square;
+}
+
+li:nth-child(1) {
+    color: red;
+}
+
+.is-custom-paragraph {
+    line-height: 1.5em;
+}
+
+.is-custom-paragraph::first-letter {
+    font-size: 40px;
+}
+
+.is-img {
+    width: 150px;
+    height: 150px;
+}
+
+.is-flex {
+    display: flex;
+}
+
+.is-right {
+    float: right;
+}
+
+.has-lightgray-background {
+    background-color: lightgray;
+}
+
+.has-left-text {
+    text-align: left;
+}
+
+.has-centered-text{
+    text-align: center;
+}
+
+.is-bordered, .is-bordered th, .is-bordered td {
+    border: 1px solid black;
+}
+
+.has-yellow-background {
+    background-color: yellow;
+}
+
+.has-blue-text {
+    color: blue;
+}
+
+.is-button{
+    border: black solid 1px;
+    color: #2d525d;
+    background-color: #c4f1fe;
+}
+
+input:invalid{
+    border: 1px solid red;
+    
+}
+
+input:valid{
+    border: 1px solid green;
+}
+
+.is-strikethrough{
+    text-decoration: line-through;
+}
